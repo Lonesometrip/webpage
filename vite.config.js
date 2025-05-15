@@ -24,8 +24,9 @@ export default defineConfig(({ command }) => {
     config.base = '/';
   } else {
     // Production mode - use repository name for GitHub Pages
-    // For custom domain, we can use '/'
-    config.base = '/';
+    // This ensures assets load correctly on GitHub Pages
+    config.base = '/webpage/';
+  }
 
   return config;
 });
