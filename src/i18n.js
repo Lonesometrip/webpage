@@ -44,7 +44,7 @@ const resources = {
       },
       "hero": {
         "title": "PREMIUM CHAUFFEUR SERVICE",
-        "subtitle": "Ihr Partner für exklusiven Limousinenservice",
+        "subtitle": "Your Limousine Service",
         "typewriter": [
           "Luxus Limousinenservice",
           "Business Chauffeur Service",

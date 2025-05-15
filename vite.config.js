@@ -23,9 +23,9 @@ export default defineConfig(({ command }) => {
     // Development mode - use root path
     config.base = '/';
   } else {
-    // Production mode - use root path for custom domain
+    // Production mode - use repository name for GitHub Pages
+    // For custom domain, we can use '/'
     config.base = '/';
-  }
 
   return config;
 });

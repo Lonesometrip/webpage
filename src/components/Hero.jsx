@@ -46,17 +46,17 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`font-black lg:text-[65px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[80px] sm:leading-[60px] leading-[40px] mt-2 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] tracking-wider uppercase`}>
+          <h1 className={`font-black mt-2 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] tracking-wider uppercase leading-[40px] sm:leading-[50px] md:leading-[60px]`}>
             {language === 'ar' ? (
               // Arabic title with the same color scheme
-              <span>
-                <span className="text-white">سائق</span> <span className="text-[#D4AF37]">فاخر</span>
+              <span className="flex flex-row items-center flex-wrap">
+                <span className="text-white text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px]">سائق</span> <span className="text-[#D4AF37] text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px]">فاخر</span>
               </span>
             ) : (
               // English title with SEO keywords
-              <span className="flex flex-col sm:flex-row sm:items-center">
-                <span className="text-white">PREMIUM</span>
-                <span className="text-[#D4AF37] sm:ml-2">CHAUFFEUR SERVICE</span>
+              <span className="flex flex-row items-center flex-wrap">
+                <span className="text-white text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px]">PREMIUM</span>
+                <span className="text-[#D4AF37] ml-2 text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px]">CHAUFFEUR</span>
               </span>
             )}
           </h1>
@@ -97,8 +97,10 @@ const Hero = () => {
           {/* SEO-optimized description paragraph */}
           <p className="mt-4 text-white-100 max-w-3xl text-[15px] sm:text-[18px] leading-relaxed drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
             {language === 'ar' ?
-              "خدمة سائق فاخر في أوروبا مع سيارات مرسيدس الفئة S وبي إم دبليو الفئة 7 ومرسيدس الفئة V. نقدم خدمات نقل رجال الأعمال، وخدمة نقل من المطار، وخدمة نقل كبار الشخصيات في جميع أنحاء أوروبا. سائق يتحدث العربية متاح على مدار الساعة لتلبية احتياجات النقل الحصرية الخاصة بك." :
-              "Luxus Limousinenservice mit Mercedes S-Klasse, BMW 7 und V-Klasse. Wir bieten Business Chauffeur Service, Airport Transfer und VIP Service in ganz Deutschland. 24/7 verfügbar für Ihre exklusiven Transportbedürfnisse."
+              "خدمة سائق فاخر في أوروبا مع سيارات مرسيدس الفئة S وبي إم دبليو الفئة 7 ومرسيدس الفئة V. نقدم خدمات نقل رجال الأعمال، وخدمة نقل من المطار، وخدمة نقل كبار الشخصيات في جميع أنحاء أوروبا." :
+              language === 'de' ?
+              "Premium Limousinenservice mit Luxusfahrzeugen. Business Service, Flughafentransfer und VIP-Service. 24h verfügbar." :
+              "Premium limousine service with luxury vehicles. Business service, airport transfers, and VIP service. Available 24/7."
             }
           </p>
 
